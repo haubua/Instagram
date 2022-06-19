@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/instagram-48.png">
+    <script src="script.js"></script>
+    <script src="htmlTemplates.js"></script>
+    <script src="JSON.js"></script>
+
+</head>
+
+<body onload="showPosts()">
+    <div class="header">
+        <a class="headerName" href="index.html">Instakram</a>
+        <div class="headerInput">
+            <input placeholder="      Suchen" class="headerInput" type="text" id="search" onkeydown="search()">
+            <div class="searchfield d-none" id="searchfield">
+                <span>Deine Suchanfrage:</span>
+            </div>
+        </div>
+            <div class="IconsCentetr">
+            <img class="Icons" src="/img/home-7-48.png" onclick="showalert()">
+            <img class="Icons" src="img/paper-plane-48.png" onclick="showalert()">
+            <img class="Icons" src="img/plus-6-48.png" onclick="showalert()">
+            <img class="Icons" src="img/compass-3-48.png" onclick="showalert()">
+            <img class="Icons" src="img/favorite-3-48.png" onclick="showalert()">
+            <img class="Icons IconsProfilPic" src="img/nedflenders.png" alt="" onclick="showalert()">
+        </div>
+    </div>
+    <div class="content" id="content">
+        
+        <div id="post">
+
+
+        </div>
+        <div class="suggestions">
+            <div class="suggestionProfil">
+                <div class="suggestionContentLeft">
+                    <img class="suggestionProfilPic" src="img/nedflenders.png" alt="">
+                    <div class="suggestionContentLeftmargin">
+                        <div class="suggestionName">v__rob__</div>
+                        <div class="suggestionProfilName">Robert Hahn</div>
+                    </div>
+                </div>
+                <a href="#" onclick="showalert()">
+                    Wechseln
+                </a>
+            </div>
+            <div class="suggestionProfil">
+                <div>
+                    Vorschläge für dich
+                </div>
+
+            </div>
+            <div id="suggestion"></div>
+            <!--<div>
+                <div class="suggestionProfil">
+                    <div class="suggestionContentLeft">
+                        <img class="suggestionProfilPic" src="img/tomturbo.png" alt="">
+                        <div class="suggestionContentLeftmargin">
+                            <div class="suggestionName">
+                                Tom Turbo
+                            </div>
+                            <div class="suggestionFollower">
+                                Fred Feuerstein und 2 weitere Personen sind Follower
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" onclick="follow()" id="follow${i}">
+                        Folgen
+                    </a>
+                </div>
+                <div class="suggestionProfil">
+                    <div class="suggestionContentLeft">
+                        <img class="suggestionProfilPic" src="img/fredfeuerstein.png" alt="">
+                        <div class="suggestionContentLeftmargin">
+                            <div class="suggestionName">
+                                Fred Feuerstein
+                            </div>
+                            <div class="suggestionFollower">
+                                Tom Turbo und 2 weitere Personen sind Follower
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" onclick="follow()" id="follow${i}">
+                        Folgen
+                    </a>
+                </div>
+                <div class="suggestionProfil">
+                    <div class="suggestionContentLeft">
+                        <img class="suggestionProfilPic" src="img/bartsimpson.png" alt="">
+                        <div class="suggestionContentLeftmargin">
+                            <div class="suggestionName">
+                                Bart Simpson
+                            </div>
+                            <div class="suggestionFollower">
+                                Fred Feuerstein ist Follower
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" onclick="follow()" id="follow${i}">
+                        Folgen
+                    </a>
+                </div>
+                <div class="suggestionProfil">
+                    <div class="suggestionContentLeft">
+                        <img class="suggestionProfilPic" src="img/homersimpson.jpg" alt="">
+                        <div class="suggestionContentLeftmargin">
+                            <div class="suggestionName">
+                                Homer Simpson
+                            </div>
+                            <div class="suggestionFollower">
+                                Fred Feuerstein und 2 weitere Personen sind Follower
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" onclick="follow()" id="follow${i}">
+                        Folgen
+                    </a>
+                </div>
+                <div class="suggestionProfil">
+                    <div class="suggestionContentLeft">
+                        <img class="suggestionProfilPic" src="img/nedflenders.png" alt="">
+                        <div class="suggestionContentLeftmargin">
+                            <div class="suggestionName">
+                                Ned Flenders
+                            </div>
+                            <div class="suggestionFollower">
+                                Homer Simpson und 1 weitere Personen sind Follower
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" onclick="follow()" id="follow${i}">
+                        Folgen
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>   -->
+</body>
+
+</html>
